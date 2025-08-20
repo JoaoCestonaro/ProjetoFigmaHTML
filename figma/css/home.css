@@ -9,6 +9,20 @@
   --white: #ffffff;
   --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   --border-radius: 8px;
+  --cor-texto-principal: #333;
+  --cor-fundo-principal: #f5f5f5;
+  --cor-texto-contraste: #ffff00;
+  --cor-fundo-contraste: #000000;
+  --tamanho-fonte: 16px;
+}
+
+/* IDs para acessibilidade via links */
+#fonte-grande { --tamanho-fonte: 20px; }
+#fonte-pequena { --tamanho-fonte: 12px; }
+#fonte-normal { --tamanho-fonte: 16px; }
+#contraste { 
+  --cor-fundo: #000000; 
+  --cor-texto: #ffff00; 
 }
 
 * {
@@ -20,11 +34,13 @@
 body {
   font-family: 'Inter', sans-serif;
   line-height: 1.6;
-  color: var(--text-color);
-  background-color: var(--light-gray);
+  color: var(--cor-texto-principal);
+  background-color: var(--cor-fundo-fundo);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  font-size: var(--tamanho-fonte);
+  transition: all 0.3s ease;
 }
 
 /* Container principal */
@@ -90,7 +106,7 @@ body {
 
 /* Seção Hero */
 .hero-section {
-  background-color: var(--primary-dark);
+  background-color: var(--cor-texto-principal);
   color: var(--white);
   padding: 2rem 0;
 }
@@ -207,6 +223,7 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 1.5rem;
+    color: var(--cor-texto-principal);
 }
 
 .info-card {
@@ -303,6 +320,35 @@ body {
   font-size: 0.875rem;
 }
 
+/* Controles de acessibilidade fixos */
+#acessibilidade {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  background-color: var(--white);
+  padding: 0.5rem 1rem;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  z-index: 9999;
+}
+
+#acessibilidade button {
+  background-color: var(--primary-color);
+  color: var(--white);
+  border: none;
+  padding: 0.5rem;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+#acessibilidade button:hover {
+  background-color: var(--primary-dark);
+}
 /* Responsividade */
 @media (max-width: 768px) {
   .header-content {

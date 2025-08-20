@@ -16,8 +16,18 @@
 <body>
   <div class="container">
 
+    <div id="acessibilidade">
+  <button id="btnAumentar">A+</button>
+  <button id="btnDiminuir">A-</button>
+  <button id="btnPadrao">A</button>
+  <button id="btnContraste">Contraste</button>
+  <button id="btnLibras">Libras</button>
+  <button id="btnTopo">⬆ Topo</button>
+</div>
+  
+
     <!-- Cabeçalho -->
-    <header class="site-header">
+    <header class="site-header">  
       <div class="header-content">
         <div class="logo-area">
         </div>
@@ -117,6 +127,58 @@
     </footer>
 
   </div>
+  <script>
+  const body = document.body;
+  let tamanhoFonte = 16;
+  let contrasteAtivo = false;
+
+  const btnAumentar = document.getElementById('btnAumentar');
+  const btnDiminuir = document.getElementById('btnDiminuir');
+  const btnPadrao = document.getElementById('btnPadrao');
+  const btnContraste = document.getElementById('btnContraste');
+  const btnLibras = document.getElementById('btnLibras');
+  const btnTopo = document.getElementById('btnTopo');
+
+  // Aumentar fonte
+  btnAumentar.addEventListener('click', () => {
+    tamanhoFonte += 2;
+    body.style.fontSize = tamanhoFonte + 'px';
+  });
+
+  // Diminuir fonte
+  btnDiminuir.addEventListener('click', () => {
+    tamanhoFonte = Math.max(10, tamanhoFonte - 2);
+    body.style.fontSize = tamanhoFonte + 'px';
+  });
+
+  // Fonte padrão
+  btnPadrao.addEventListener('click', () => {
+    tamanhoFonte = 16;
+    body.style.fontSize = tamanhoFonte + 'px';
+  });
+
+  // Contraste
+  btnContraste.addEventListener('click', () => {
+    contrasteAtivo = !contrasteAtivo;
+    if (contrasteAtivo) {
+      body.style.backgroundColor = '#000';
+      body.style.color = '#ffff00';
+    } else {
+      body.style.backgroundColor = '';
+      body.style.color = '';
+    }
+  });
+
+  // Libras (alerta, pode integrar VLibras)
+  btnLibras.addEventListener('click', () => {
+    alert('Integração com Libras aqui!');
+  });
+
+  // Voltar ao topo
+  btnTopo.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+</script>
 </body>
 
 </html>
