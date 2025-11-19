@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - InfoCursos</title>
+    <link rel="stylesheet" href="css/vars.css">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/acessibilidade.css">
+    <link rel="stylesheet" href="css/acessibilidade-extra.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container-secundario">
+        <header class="cabecalho-interno">
+            <a href="index.html" class="botao-voltar">
+                <img src="img/seta-voltar.svg" alt="Voltar">
+            </a>
+            <h1>Contato</h1>
+        </header>
+
+        <main class="conteudo-contato">
+            <section class="card-contato">
+                <div class="fundo-card"></div>
+                <img src="img/email-icon.png" alt="E-mail" class="icone-contato">
+                <div class="info-contato">
+                    <h2>E-mail</h2>
+                    <p>Entre em contato com nosso suporte!</p>
+                    <p class="destaque">felipebianchini02@gmail.com</p>
+                </div>
+            </section>
+
+            <section class="card-contato">
+                <div class="fundo-card"></div>
+                <img src="img/phone-icon.png" alt="Telefone" class="icone-contato">
+                <div class="info-contato">
+                    <h2>Telefone</h2>
+                    <p>Entre em contato, ligue para</p>
+                    <p class="destaque">(17) 99663-8804</p>
+                </div>
+            </section>
+
+            <section class="card-contato">
+                <div class="fundo-card"></div>
+                <img src="img/chat-icon.png" alt="Chat" class="icone-contato">
+                <div class="info-contato">
+                    <h2>Chat</h2>
+                    <p>Converse com nossa equipe via chat online!</p>
+                    <p class="observacao">(Indisponível no momento)</p>
+                </div>
+            </section>
+        </main>
+    </div>
+            <footer class="rodape">
+            <a href="index.html" class="rodape-voltar">
+                <img src="img/seta-voltar.svg" alt="Voltar">
+                Voltar
+            </a>
+            <div class="rodape-info">
+                © 2025 InfoCursos | <a>Seu curso</a>
+            </div>
+        </footer>
+
+        <nav class="menu-navegacao">
+            <a href="cursos.html" class="botao-nav">
+                <div class="fundo-botao"></div>
+                <span>Cursos</span>
+            </a>
+            <a href="novidades.html" class="botao-nav">
+                <div class="fundo-botao"></div>
+                <span>Novidades</span>
+            </a>
+            <a href="sobre.html" class="botao-nav">
+                <div class="fundo-botao"></div>
+                <span>Informação</span>
+            </a>
+            <a href="contato.html" class="botao-nav">
+                <div class="fundo-botao"></div>
+                <span>Contato</span>
+            </a>
+        </nav>
+</div> <button id="voltar-ao-topo" class="voltar-ao-topo" title="Voltar ao topo">↑</button>
+
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+
+    <div class="accessibility-controls">
+    <button id="reset-font" class="control-button" title="Restaurar fonte">A</button>
+    <button id="increase-font" class="control-button" title="Aumentar fonte">A+</button>
+    <button id="decrease-font" class="control-button" title="Diminuir fonte">A-</button>
+    <button id="theme-toggle" class="control-button" title="Alternar tema">🌙/☀️</button>
+    
+    <div class="color-filter-container">
+        <select id="color-filter-select" class="control-select" title="Filtro de cor para daltonismo">
+            <option value="default">Cores Padrão</option>
+            <option value="protanopia">Protanopia</option>
+            <option value="deuteranopia">Deuteranopia</option>
+            <option value="tritanopia">Tritanopia</option>
+        </select>
+    </div>
+</div>
+
+    <script src="js/acessibilidade.js"></script>
+
+</body>
+</html>

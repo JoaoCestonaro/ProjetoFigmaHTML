@@ -1,0 +1,82 @@
+/* css/acessibilidade-extra.css */
+
+/* --- BOTÃO VOLTAR AO TOPO --- */
+.voltar-ao-topo {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: var(--cor-primaria);
+    color: var(--texto-claro);
+    border: none;
+    border-radius: 50%;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: var(--z-modal);
+    
+    /* Inicia oculto */
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px);
+
+    /* Transição suave */
+    transition: opacity 0.3s, visibility 0.3s, transform 0.3s, background-color 0.3s;
+}
+
+.voltar-ao-topo.mostrar {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.voltar-ao-topo:hover {
+    background-color: var(--cor-secundaria);
+}
+
+/* --- AJUSTE PARA O WIDGET DE LIBRAS --- */
+/* Garante que o botão do VLibras não fique por baixo de outros elementos */
+div[vw-access-button] {
+    z-index: var(--z-modal) !important;
+}
+
+/* --- ESTILOS PARA MODO DE ALTO CONTRASTE --- */
+
+/* Garante que todos os textos usem as cores de alto contraste */
+.high-contrast,
+.high-contrast h1,
+.high-contrast h2,
+.high-contrast h3,
+.high-contrast p,
+.high-contrast span,
+.high-contrast div,
+.high-contrast small {
+    color: var(--texto-principal) !important;
+}
+
+/* Garante que os links usem a cor primária de alto contraste */
+.high-contrast a {
+    color: var(--cor-primaria) !important;
+}
+
+/* Garante que os botões usem as cores corretas */
+.high-contrast .botao-primario {
+    background: transparent;
+    border: 2px solid var(--cor-destaque);
+    color: var(--cor-destaque) !important;
+}
+
+.high-contrast .botao-login,
+.high-contrast .botao-registro {
+     background: transparent;
+     border: 2px solid var(--texto-claro);
+     color: var(--texto-claro) !important;
+}
+
+/* Remove imagens de fundo que podem atrapalhar a leitura */
+.high-contrast body,
+.high-contrast .card-curso,
+.high-contrast .fundo-card {
+    background-image: none !important;
+}

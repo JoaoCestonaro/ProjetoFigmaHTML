@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursos - InfoCursos</title>
+    <link rel="stylesheet" href="css/vars.css">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/acessibilidade-extra.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">    <link rel="stylesheet" href="css/acessibilidade.css">
+</head>
+<body>
+    <div class="container-secundario">
+        <header class="cabecalho-interno">
+            <a href="index.html" class="botao-voltar">
+                <img src="img/seta-voltar.svg" alt="Voltar">
+            </a>
+            <h1>Cursos</h1>
+        </header>
+
+        <main class="conteudo-cursos">
+            <section class="introducao-cursos">
+                <h2>Conheça as Linguagens de Programação</h2>
+                <p>Nesta seção você encontra as principais linguagens utilizadas no mercado de tecnologia. 
+                Cada uma possui suas características e aplicações ideais.</p>
+            </section>
+
+            <article class="card-curso">
+                <div class="fundo-card"></div>
+                <img src="img/python-logo.png" alt="Python" class="logo-linguagem">
+                <div class="info-curso">
+                    <h3>Python</h3>
+                    <p><strong>Python</strong> é uma linguagem de programação de <strong>alto nível</strong> 
+                    e para propósitos diversos. Pode ser usada para múltiplas tarefas, desde análise de 
+                    dados até desenvolvimento web.</p>
+                </div>
+            </article>
+
+            <article class="card-curso">
+                <div class="fundo-card"></div>
+                <img src="img/java-logo.png" alt="Java" class="logo-linguagem">
+                <div class="info-curso">
+                    <h3>Java</h3>
+                    <p><strong>Java</strong> pertence à <strong>Oracle</strong>. É uma linguagem de alto nível 
+                    que se aproxima da linguagem humana e permite criar qualquer tipo de aplicação com facilidade.</p>
+                </div>
+            </article>
+
+            <article class="card-curso">
+                <div class="fundo-card"></div>
+                <img src="img/cpp-logo.png" alt="C++" class="logo-linguagem">
+                <div class="info-curso">
+                    <h3>C++</h3>
+                    <p>O <strong>C++</strong> é uma versão melhorada da C, popular na área de ciências da computação. 
+                    Sua versatilidade a torna uma das linguagens mais indicadas para aprender.</p>
+                </div>
+            </article>
+        </main>
+
+        <footer class="rodape">
+            <a href="index.html" class="rodape-voltar">
+                <img src="img/seta-voltar.svg" alt="Voltar">
+                Voltar
+            </a>
+            <div class="rodape-info">
+                © 2025 InfoCursos | <a href="#">Seu curso</a>
+            </div>
+        </footer>
+
+        <nav class="menu-navegacao">
+            <a href="cursos.html" class="botao-nav">
+                <span>Cursos</span>
+            </a>
+            <a href="novidades.html" class="botao-nav">
+                <span>Novidades</span>
+            </a>
+            <a href="sobre.html" class="botao-nav">
+                <span>Informação</span>
+            </a>
+            <a href="contato.html" class="botao-nav">
+                <span>Contato</span>
+            </a>
+        </nav>
+</div> <button id="voltar-ao-topo" class="voltar-ao-topo" title="Voltar ao topo">↑</button>
+
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+
+    <div class="accessibility-controls">
+    <button id="reset-font" class="control-button" title="Restaurar fonte">A</button>
+    <button id="increase-font" class="control-button" title="Aumentar fonte">A+</button>
+    <button id="decrease-font" class="control-button" title="Diminuir fonte">A-</button>
+    <button id="theme-toggle" class="control-button" title="Alternar tema">🌙/☀️</button>
+    
+    <div class="color-filter-container">
+        <select id="color-filter-select" class="control-select" title="Filtro de cor para daltonismo">
+            <option value="default">Cores Padrão</option>
+            <option value="protanopia">Protanopia</option>
+            <option value="deuteranopia">Deuteranopia</option>
+            <option value="tritanopia">Tritanopia</option>
+        </select>
+    </div>
+</div>
+
+    <script src="js/acessibilidade.js"></script>
+
+</body>
+</html>

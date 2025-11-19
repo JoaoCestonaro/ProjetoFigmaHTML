@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre TI - InfoCursos</title>
+    <link rel="stylesheet" href="css/vars.css">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/acessibilidade.css">
+    <link rel="stylesheet" href="css/acessibilidade-extra.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container-secundario">
+        <header class="cabecalho-interno">
+            <a href="index.html" class="botao-voltar">
+                <img src="img/seta-voltar.svg" alt="Voltar">
+            </a>
+            <h1>O que é Tecnologia da Informação</h1>
+        </header>
+
+        <main class="conteudo-sobre">
+            <section class="secao-ti">
+                <div class="fundo-secao"></div>
+                <div class="texto-sobre">
+                    <p>A Tecnologia da Informação (TI) é uma das áreas mais promissoras e dinâmicas do mundo atualmente. Com a rápida evolução das tecnologias digitais e sua crescente importância em diversos setores da economia, a demanda por profissionais de TI só tende a aumentar.</p>
+                    
+                    <p>De acordo com dados do site de empregos Catho, a média salarial para profissionais de TI no Brasil é de R$ 3.800,00, com variações que podem chegar a mais de R$ 16.666,67 para cargos mais especializados e de liderança.</p>
+                    
+                    <p>Além dos bons salários, o mercado de trabalho para TI oferece muitos benefícios, como home office, assistência médica, gympass, day-off de aniversário e muito mais. Há muitas oportunidades de emprego para aqueles que desejam iniciar nesta área.</p>
+                </div>
+                <img src="img/ilustracao-ti.png" alt="TI" class="imagem-ti">
+            </section>
+        </main>
+    </div>
+            <footer class="rodape">
+            <a href="index.html" class="rodape-voltar">
+                <img src="img/seta-voltar.svg" alt="Voltar">
+                Voltar
+            </a>
+            <div class="rodape-info">
+                © 2025 InfoCursos | <a>Seu curso</a>
+            </div>
+        </footer>
+
+        <nav class="menu-navegacao">
+            <a href="cursos.html" class="botao-nav">
+                <div class="fundo-botao"></div>
+                <span>Cursos</span>
+            </a>
+            <a href="novidades.html" class="botao-nav">
+                <div class="fundo-botao"></div>
+                <span>Novidades</span>
+            </a>
+            <a href="sobre.html" class="botao-nav">
+                <div class="fundo-botao"></div>
+                <span>Informação</span>
+            </a>
+            <a href="contato.html" class="botao-nav">
+                <div class="fundo-botao"></div>
+                <span>Contato</span>
+            </a>
+        </nav>
+</div> <button id="voltar-ao-topo" class="voltar-ao-topo" title="Voltar ao topo">↑</button>
+
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+
+    <div class="accessibility-controls">
+    <button id="reset-font" class="control-button" title="Restaurar fonte">A</button>
+    <button id="increase-font" class="control-button" title="Aumentar fonte">A+</button>
+    <button id="decrease-font" class="control-button" title="Diminuir fonte">A-</button>
+    <button id="theme-toggle" class="control-button" title="Alternar tema">🌙/☀️</button>
+    
+    <div class="color-filter-container">
+        <select id="color-filter-select" class="control-select" title="Filtro de cor para daltonismo">
+            <option value="default">Cores Padrão</option>
+            <option value="protanopia">Protanopia</option>
+            <option value="deuteranopia">Deuteranopia</option>
+            <option value="tritanopia">Tritanopia</option>
+        </select>
+    </div>
+</div>
+
+    <script src="js/acessibilidade.js"></script>
+
+</body>
+</html>

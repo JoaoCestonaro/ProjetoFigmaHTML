@@ -1,0 +1,146 @@
+﻿.accessibility-drawer {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  display: flex;
+  align-items: flex-end;
+  gap: 0.75rem;
+  z-index: 120;
+}
+
+.accessibility-tab {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.75rem 1.1rem;
+  border-radius: 999px;
+  background: var(--gradient-primary);
+  color: var(--color-text-inverse);
+  font-weight: 600;
+  border: none;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition-base);
+}
+
+.accessibility-tab:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-hover);
+}
+
+.accessibility-panel {
+  position: relative;
+  bottom: 0;
+  right: 0;
+  display: grid;
+  gap: 0.75rem;
+  padding: 1.25rem;
+  border-radius: var(--radius-lg);
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  box-shadow: var(--shadow-md);
+  width: min(320px, calc(100% - 2rem));
+  transform: translateX(120%);
+  opacity: 0;
+  pointer-events: none;
+  transition: var(--transition-base);
+}
+
+:root[data-theme='dark'] .accessibility-panel {
+  background: rgba(15, 23, 42, 0.92);
+}
+
+.accessibility-drawer.is-open .accessibility-panel {
+  transform: translateX(0);
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.accessibility-group {
+  display: grid;
+  gap: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.accessibility-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.accessibility-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.accessibility-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  padding: 0.5rem 0.75rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid rgba(88, 83, 255, 0.22);
+  background: rgba(88, 83, 255, 0.12);
+  color: var(--color-primary-strong);
+  font-weight: 600;
+  transition: var(--transition-base);
+}
+
+.accessibility-button[disabled] {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.accessibility-button:not([disabled]):hover {
+  background: rgba(88, 83, 255, 0.18);
+}
+
+.accessibility-value {
+  min-width: 48px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.accessibility-select {
+  width: 100%;
+  padding: 0.65rem 0.75rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid rgba(148, 163, 184, 0.3);
+  background: rgba(255, 255, 255, 0.85);
+  color: var(--color-text);
+}
+
+:root[data-theme='dark'] .accessibility-select {
+  background: rgba(15, 23, 42, 0.82);
+}
+
+.accessibility-hint {
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+}
+
+.accessibility-drawer [vw] {
+  position: absolute !important;
+  opacity: 0;
+  pointer-events: none;
+}
+
+@media (max-width: 640px) {
+  .accessibility-drawer {
+    bottom: 1rem;
+    right: 1rem;
+    flex-direction: column-reverse;
+    align-items: flex-end;
+  }
+
+  .accessibility-tab {
+    width: auto;
+  }
+
+  .accessibility-panel {
+    width: min(100vw - 2rem, 340px);
+  }
+}

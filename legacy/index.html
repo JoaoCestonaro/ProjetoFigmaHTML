@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InfoCursos - Cursos de Tecnologia</title>
+    <link rel="stylesheet" href="css/vars.css">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/acessibilidade.css">
+    <link rel="stylesheet" href="css/acessibilidade-extra.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Inter', sans-serif;
+            background: var(--fundo-principal);
+        }
+    </style>
+</head>
+<body>
+    <div class="container-principal">
+        <header class="cabecalho">
+            <div class="logo-container">
+                <div class="logo-quadrado">IC</div>
+                <img src="img/logo-tecnologia.png" alt="Logo InfoCursos" class="logo-img">
+            </div>
+            <div class="botoes-acesso">
+                <a href="login.html" class="botao-login">Login</a>
+                <a href="cadastro.html" class="botao-registro">Registrar</a>
+            </div>
+        </header>
+
+        <main class="conteudo">
+            <h1 class="titulo-bemvindo">Seja bem vindo(a) ao app InfoCursos</h1>
+            <div class="saudacao-usuario">Olá, <span class="nome-usuario">Usuário</span></div>
+            
+            <div class="texto-introducao">
+                <p>Bem vindo ao aplicativo de cursos da área de tecnologia da informação, 
+                onde você irá aprender sobre as tecnologias emergentes do mercado de trabalho.</p>
+                <p>Aqui você encontra cursos sobre programação, redes, design, engenharia 
+                de software, inteligência artificial e muito mais.</p>
+                <p>Explore os links e navegue conosco nesta jornada de aprendizado!</p>
+            </div>
+            
+            <img src="img/ilustracao-tecnologia.png" alt="Ilustração de tecnologia" class="ilustracao-principal">
+        </main>
+
+        <nav class="menu-navegacao">
+            <a href="cursos.html" class="botao-nav">
+                <div class="fundo-botao"></div>
+                <span>Cursos</span>
+            </a>
+            <a href="novidades.html" class="botao-nav">
+                <div class="fundo-botao"></div>
+                <span>Novidades</span>
+            </a>
+            <a href="sobre.html" class="botao-nav">
+                <div class="fundo-botao"></div>
+                <span>Informação</span>
+            </a>
+            <a href="contato.html" class="botao-nav">
+                <div class="fundo-botao"></div>
+                <span>Contato</span>
+            </a>
+        </nav>
+ </div> <button id="voltar-ao-topo" class="voltar-ao-topo" title="Voltar ao topo">↑</button>
+
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+
+    <div class="accessibility-controls">
+    <button id="reset-font" class="control-button" title="Restaurar fonte">A</button>
+    <button id="increase-font" class="control-button" title="Aumentar fonte">A+</button>
+    <button id="decrease-font" class="control-button" title="Diminuir fonte">A-</button>
+    <button id="theme-toggle" class="control-button" title="Alternar tema">🌙/☀️</button>
+    
+    <div class="color-filter-container">
+        <select id="color-filter-select" class="control-select" title="Filtro de cor para daltonismo">
+            <option value="default">Cores Padrão</option>
+            <option value="protanopia">Protanopia</option>
+            <option value="deuteranopia">Deuteranopia</option>
+            <option value="tritanopia">Tritanopia</option>
+        </select>
+    </div>
+</div>
+
+    <script src="js/acessibilidade.js"></script>
+
+</body>
+</html>

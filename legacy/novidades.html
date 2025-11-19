@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novidades - InfoCursos</title>
+    <link rel="stylesheet" href="css/vars.css">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/acessibilidade-extra.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">    <link rel="stylesheet" href="css/acessibilidade.css">
+</head>
+<body>
+    <div class="container-secundario">
+        <header class="cabecalho-interno">
+            <a href="index.html" class="botao-voltar">
+                <img src="img/seta-voltar.svg" alt="Voltar">
+            </a>
+            <h1>Últimas Novidades</h1>
+        </header>
+
+        <main class="conteudo-noticias">
+            <article class="noticia-destaque">
+                <img src="img/noticias-img.png" alt="IA nas escolas" class="imagem-noticia">
+                <div class="texto-noticia">
+                    <h2>Inteligência Artificial nas escolas brasileiras</h2>
+                    <p>A adoção da Inteligência Artificial em salas de aula tem crescido no Brasil. Plataformas educacionais estão utilizando IA para personalizar o ensino, oferecendo conteúdos de acordo com o ritmo de cada aluno.</p>
+                    <p>A tendência promete transformar a forma como aprendemos, tornando o processo mais interativo e eficiente.</p>
+                </div>
+            </article>
+            
+            <article class="noticia-destaque">
+                <img src="img/noticias-img.png" alt="Desenvolvimento Web" class="imagem-noticia">
+                <div class="texto-noticia">
+                    <h2>As linguagens mais utilizadas em 2025</h2>
+                    <p>Com o avanço contínuo da tecnologia, as linguagens de programação mais populares continuam evoluindo. JavaScript, Python e Java seguem na liderança, mas linguagens como Rust e Go ganham cada vez mais espaço.</p>
+                    <p>Desenvolvedores que dominam múltiplas linguagens têm vantagem significativa no mercado.</p>
+                </div>
+            </article>
+        </main>
+
+        <footer class="rodape">
+            <a href="index.html" class="rodape-voltar">
+                <img src="img/seta-voltar.svg" alt="Voltar">
+                Voltar
+            </a>
+            <div class="rodape-info">
+                © 2025 InfoCursos | <a href="#">Seu curso</a>
+            </div>
+        </footer>
+
+        <nav class="menu-navegacao">
+            <a href="cursos.html" class="botao-nav">
+                <span>Cursos</span>
+            </a>
+            <a href="novidades.html" class="botao-nav">
+                <span>Novidades</span>
+            </a>
+            <a href="sobre.html" class="botao-nav">
+                <span>Informação</span>
+            </a>
+            <a href="contato.html" class="botao-nav">
+                <span>Contato</span>
+            </a>
+        </nav>
+</div> <button id="voltar-ao-topo" class="voltar-ao-topo" title="Voltar ao topo">↑</button>
+
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+
+    <div class="accessibility-controls">
+    <button id="reset-font" class="control-button" title="Restaurar fonte">A</button>
+    <button id="increase-font" class="control-button" title="Aumentar fonte">A+</button>
+    <button id="decrease-font" class="control-button" title="Diminuir fonte">A-</button>
+    <button id="theme-toggle" class="control-button" title="Alternar tema">🌙/☀️</button>
+    
+    <div class="color-filter-container">
+        <select id="color-filter-select" class="control-select" title="Filtro de cor para daltonismo">
+            <option value="default">Cores Padrão</option>
+            <option value="protanopia">Protanopia</option>
+            <option value="deuteranopia">Deuteranopia</option>
+            <option value="tritanopia">Tritanopia</option>
+        </select>
+    </div>
+</div>
+
+    <script src="js/acessibilidade.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,124 @@
+/* vars.css - V3.0 - REVISÃO ESTÉTICA GERAL */
+:root {
+    /* --- PALETA DE CORES - TEMA CLARO --- */
+    --cor-primaria: #5D5FEF;       /* Roxo/Azul vibrante para ações principais */
+    --cor-secundaria: #3D3C82;    /* Tom mais escuro para hover e títulos */
+    --cor-terciaria: #7A7DFF;     /* Tom mais claro para destaques sutis */
+    --cor-destaque: #F0C419;      /* Amarelo para pontos de atenção (ex: logo) */
+
+    /* --- CORES DE TEXTO --- */
+    --texto-principal: #0D1117;   /* Preto suave para corpo de texto */
+    --texto-secundario: #586069;  /* Cinza para textos de apoio e placeholders */
+    --texto-claro: #FFFFFF;       /* Branco para usar sobre fundos coloridos/escuros */
+    
+    /* --- CORES DE FUNDO --- */
+    --fundo-principal: #F6F8FA;   /* Cinza muito claro, mais suave que branco puro */
+    --fundo-card: #FFFFFF;
+    --fundo-header: var(--cor-primaria);
+    --fundo-nav: #FFFFFF;
+    
+    /* --- BORDAS E SOMBRAS --- */
+    --borda-cor: #D1D5DA;
+    --sombra-card: 0 4px 15px rgba(0, 0, 0, 0.06);
+    --sombra-botao: 0 2px 5px rgba(93, 95, 239, 0.4);
+
+    /* --- TIPOGRAFIA E ESPAÇAMENTO --- */
+    --fonte-principal: 'Inter', sans-serif;
+    --tamanho-base: 1rem; /* 16px */
+    --raio-borda: 10px;
+    --raio-borda-pequeno: 6px;
+    --transicao-padrao: all 0.25s ease-in-out;
+    
+    /* --- Z-INDEX --- */
+    --z-base: 1;
+    --z-nav: 10;
+    --z-modal: 100;
+}
+
+/* ==========================================================================
+   VARIÁVEIS PARA MODO ESCURO (DARK MODE)
+   ========================================================================== */
+:root.dark-mode {
+    /* --- PALETA DE CORES - TEMA ESCURO --- */
+    --cor-primaria: #7A7DFF;       /* Roxo/Azul mais claro para se destacar no escuro */
+    --cor-secundaria: #9DA0FF;    /* Tom ainda mais claro para hover */
+    --cor-terciaria: #5D5FEF;
+    --cor-destaque: #F0C419;
+
+    /* --- CORES DE TEXTO --- */
+    --texto-principal: #E6EDF3;   /* Branco suave */
+    --texto-secundario: #8B949E;  /* Cinza claro */
+    --texto-claro: #E6EDF3;
+
+    /* --- CORES DE FUNDO --- */
+    --fundo-principal: #0D1117;   /* Quase preto (cor do GitHub) */
+    --fundo-card: #161B22;        /* Azul-escuro para cards */
+    --fundo-header: #161B22;
+    --fundo-nav: #161B22;
+
+    /* --- BORDAS E SOMBRAS --- */
+    --borda-cor: #30363D;
+    --sombra-card: 0 0 0 1px var(--borda-cor); /* Sombra sutil que parece uma borda */
+    --sombra-botao: 0 2px 8px rgba(122, 125, 255, 0.3);
+}
+
+    /* ==========================================================================
+   VARIÁVEIS PARA MODO DE ALTO CONTRASTE
+   ========================================================================== */
+:root.high-contrast {
+    /* --- PALETA DE CORES - ALTO CONTRASTE --- */
+    --cor-primaria: #00FFFF;       /* Ciano para máxima visibilidade em links */
+    --cor-secundaria: #FFFF00;    /* Amarelo para destaques */
+    --cor-terciaria: #00FFFF;
+    --cor-destaque: #FFFF00;
+
+    /* --- CORES DE TEXTO --- */
+    --texto-principal: #FFFFFF;
+    --texto-secundario: #FFFFFF;
+    --texto-claro: #FFFFFF;
+    
+    /* --- CORES DE FUNDO --- */
+    --fundo-principal: #000000;
+    --fundo-card: #000000;
+    --fundo-header: #000000;
+    --fundo-nav: #000000;
+    
+    /* --- BORDAS E SOMBRAS --- */
+    --borda-cor: #FFFFFF;
+    --sombra-card: 0 0 0 2px var(--borda-cor); /* Bordas brancas bem visíveis */
+    --sombra-botao: none;
+}
+
+/* ==========================================================================
+   PALETAS DE CORES PARA DALTONISMO
+   ========================================================================== */
+
+/* --- Protanopia (dificuldade com vermelhos) --- */
+/* Usa azuis, amarelos e cinzas, evitando vermelho/verde */
+:root.protanopia {
+    --cor-primaria: #0072B2;    /* Azul forte */
+    --cor-secundaria: #005A8E;   /* Azul escuro */
+    --cor-terciaria: #56B4E9;    /* Azul claro */
+    --cor-destaque: #E69F00;     /* Laranja/Amarelo */
+    --fundo-header: #0072B2;
+}
+
+/* --- Deuteranopia (dificuldade com verdes) --- */
+/* Semelhante à Protanopia, focando em distinção azul/amarelo */
+:root.deuteranopia {
+    --cor-primaria: #D55E00;    /* Laranja avermelhado */
+    --cor-secundaria: #AA4B00;   /* Laranja escuro */
+    --cor-terciaria: #F0E442;    /* Amarelo brilhante */
+    --cor-destaque: #009E73;     /* Verde azulado */
+    --fundo-header: #D55E00;
+}
+
+/* --- Tritanopia (dificuldade com azul/amarelo) --- */
+/* Usa rosa, ciano e tons de vermelho/preto */
+:root.tritanopia {
+    --cor-primaria: #CC79A7;    /* Rosa */
+    --cor-secundaria: #A36185;   /* Rosa escuro */
+    --cor-terciaria: #FF4136;    /* Vermelho brilhante */
+    --cor-destaque: #01FF70;     /* Verde limão */
+    --fundo-header: #CC79A7;
+}
